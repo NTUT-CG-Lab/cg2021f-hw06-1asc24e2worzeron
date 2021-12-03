@@ -216,6 +216,7 @@
 					const stepMaterial = new THREE.MeshPhongMaterial( { color: 0xAAAAAA, specular: 0x111111, shininess: 200 } );
 					
 					// Load models of pytorch3d 
+					// asynchronous callback --> 統一沿用 scaleValue
 					models.forEach(
 						element => loader.load(
 							'./models/'+modelName+'/model_'+element.toString()+'.ply',	// 載入
